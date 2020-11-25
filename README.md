@@ -75,6 +75,7 @@ has_many :users
 |  info  |  text      | null: false |
 |  name  |  string    | null: false |
 belongs_to :user
+has_many :rooms
 
 
 ## ローカルでの動作方法
