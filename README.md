@@ -59,8 +59,10 @@
 | encrypted_password| string | null: false |
 
 ### Association
-has_many :rooms
+has_many :rooms_users
+has_many :rooms,through: room_users
 has_many :pickup
+
 
 ### rooms テーブル
 
@@ -72,10 +74,36 @@ has_many :pickup
 |   who  |  text  | null: false |
 |   why  |  text  | null: false |
 |   how  |  text  | null: false |
+　　
 
 ### Association
 
-has_many :users
+-has_many :room_users
+-has_many :users,through: room_users
+-has_many :messages
+
+## room_users テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+
+### messages テーブル
+ Column   | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     |                                |
+| user    | references | null: false, foreign_key: true |
+| room    | references | null: false, foreign_key: true |
+
+### Association
+belongs_to :room
+belongs_to :user
 
 
 ### pickups テーブル
