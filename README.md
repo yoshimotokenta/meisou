@@ -57,6 +57,8 @@
 | name     | string | null: false |
 | email    | string | null: false |
 | password | string | null: false |
+
+### Association
 has_many :rooms
 has_many :pickup
 
@@ -65,6 +67,9 @@ has_many :pickup
 | Column | Type   | Options     |
 | ------ | ------ | ----------- |
 |  name  | string | null: false |
+
+### Association
+
 has_many :users
 
 
@@ -74,6 +79,9 @@ has_many :users
 | ------ | ---------- | ------------|
 |  info  |  text      | null: false |
 |  name  |  string    | null: false |
+
+### Association
+
 belongs_to :user
 has_many :rooms
 
