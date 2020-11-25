@@ -52,11 +52,11 @@
 ### データーベース設計
 ### users テーブル
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| name     | string | null: false |
-| email    | string | null: false |
-| password | string | null: false |
+|      Column       | Type   | Options     |
+| ----------------- | ------ | ----------- |
+|       name        | string | null: false |
+|       email       | string | null: false |
+| encrypted_password| string | null: false |
 
 ### Association
 has_many :rooms
@@ -67,6 +67,11 @@ has_many :pickup
 | Column | Type   | Options     |
 | ------ | ------ | ----------- |
 |  name  | string | null: false |
+|  when  |  text  | null: false |
+|  where |  text  | null: false |
+|   who  |  text  | null: false |
+|   why  |  text  | null: false |
+|   how  |  text  | null: false |
 
 ### Association
 
