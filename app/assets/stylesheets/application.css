@@ -1,18 +1,174 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- * {
+header{
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(90deg, rgb(128, 193, 231), rgb(233, 235, 241));
+  font-family: unset;
+}
+
+.btn-gradient-simple01{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #54afec 0%, #0b7eeb 100%);
+  transition: .4s;
+  margin-right: 15px;
+}
+
+.btn-gradient-simple:hover {
+  background-image: linear-gradient(45deg, #54afec 0%, #0b7eeb 100%);
+}
+
+
+.btn-gradient-simple02{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #54afec 0%, #0b7eeb 100%);
+  transition: .4s;
+}
+
+.btn-gradient-simple:hover {
+  background-image: linear-gradient(45deg, #54afec 0%, #0b7eeb 100%);
+}
+
+.head_item{
+  font-size: 18px;
+  display: flex;
+  padding: 15px;
+}
+
+.head_container{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+}
+
+.container{
+  background-image: url('imega.meisou.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-position: bottom;
+  display: flex;
+  justify-content: space-evenly;
+  background-position: center;
+}
+
+.container h1{
+   font-size: 24px;
+   padding-left: 150px;
+   padding-top: 50px;
+}
+
+.container h2{
+  font-size: 24px;
+  padding: 430px 0px 0px 0px;
+}
+
+.container h3{
+  font-size: 24px;
+  padding-right: 150px;
+  padding-top: 50px;
+}
+
+
+.main{
+  height: 450px;
+  width: 100%;
+  background-color:white;
+  display: flex;
+ }
+
+.left-content{
+  width: 55%;
+}
+
+.left-content img{
+  width: 100%;
+  padding:32px 0px 0px 0px;
+
+
+}
+.right-content{
+  width: 50%;
+  height: 50px;
+}
+
+.class01{
+  font-size: 20px;
+}
+
+
+.main h1{
+  padding: 50px 0px 0px 250px;
+  margin: auto;
+}
+
+.main P{
+  padding: 0px 0px 0px 250px;
+  font-size:  20px;
+}
+
+img{
+  width: 50%;
+  height: 450px;
+}
+
+.content01 h1{
+  padding: 10px 0px 0px 240px; 
+}
+
+.content01 P{
+  padding: 0px 0px 0px 240px;
+  font-size: 20px;
+}
+
+
+.footer {
+  padding: 5vh 0;
+  color:black;
+  background: linear-gradient(90deg, rgb(233, 235, 241), rgb(128, 193, 231));
+  text-align: center;
+  margin: 87px 0px 0px 0px;
+}
+
+.meisou-details {
+  margin: 0 4vw;
+}
+
+.footer-content-head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-content-head ul{
+  list-style-type: none;
+}
+
+.footer-link {
+  color:black;
+  font-size: 12px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer>p {
+  font-size: 14px;
+}
+
+* {
   box-sizing: border-box;
 }
