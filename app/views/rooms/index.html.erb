@@ -2,13 +2,13 @@
   <div class="head_container">
       <a heaf>mind chat</a>
       <div class="head_item">
-      <div class="btn-wrap--perspective">
-       <a href="#" class="btn-gradient-simple01">新規登録</a>
-      </div>
-      <div class="btn-wrap--perspective">
-        <a href="#" class="btn-gradient-simple02">ログイン</a>
-      </div>
-</div>
+      <% if user_signed_in? %>
+            <%= link_to "ログアウト", "#", method: :delete,class: "post1" %>
+            <%= link_to "投稿する", "#", class: "post2" %>
+        <% else %>
+            <%= link_to "ログイン", "#", class: "post1" %>
+            <%= link_to "新規登録", "#", class: "post2" %>
+        <% end %>
 </header>
 
     <div class="container">
