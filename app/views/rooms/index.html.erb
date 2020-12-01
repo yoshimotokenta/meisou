@@ -2,13 +2,14 @@
   <div class="head_container">
       <a heaf>mind chat</a>
       <div class="head_item">
-      <% if user_signed_in? %>
-            <%= link_to "ログアウト", "#", method: :delete,class: "post1" %>
-            <%= link_to "投稿する", "#", class: "post2" %>
+       <% if user_signed_in? %>
+            <%= link_to "ログアウト", "destroy_user_session_path",method: :delete,class: "post1" %>
+            <%= link_to "チャット画面へ", "new_room_path", class: "post2" %>
         <% else %>
-            <%= link_to "ログイン", "#", class: "post1" %>
-            <%= link_to "新規登録", "#", class: "post2" %>
+            <%= link_to "ログイン", "new_user_session_path", class: "post1" %>
+            <%= link_to "新規登録", "new_user_registration_path", class: "post2" %>
         <% end %>
+        </div>
 </header>
 
     <div class="container">
